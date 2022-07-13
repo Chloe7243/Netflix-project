@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sign-in-page {
+  width: 100vw;
+  background: url(/img/netflix\ bg\ image.jpg) no-repeat fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.brand-name {
+  color: #c31e27;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 3.2px;
+  padding: 15px;
+}
+
+#sign-in-form {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 55px 70px 20px;
+  width: 480px;
+  margin: auto;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(147, 141, 141);
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#sign-in-form > input {
+  padding: 15px;
+  color: #fff;
+  background-color: rgb(62, 61, 61);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 9px 0;
+}
+
+::placeholder {
+  color: rgb(147, 141, 141);
+}
+
+button {
+  padding: 15px;
+  color: #fff;
+  background-color: #dc1620;
+  font-weight:600;
+  border-radius: 4px;
+  border: none;
+  margin: 30px 0 15px;
+}
+
+.line1 {
+  font-size: 15px;
+}
+
+#remember-check {
+  width: 16px;
+  height: 16px;
+  outline: none;
+}
+
+.remember {
+  vertical-align: top;
+}
+
+.help {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.line2 {
+  padding: 90px 0;
+}
+.line2 > h5 {
+  font-weight: 100;
+}
+h5 > a {
+  color: #fff;
+}
+.line2 > p {
+  font-size: 14px;
+  padding-top: 17px;
+  font-weight: 100;
+}
+
+.line2 > p > a {
+  font-weight: bold;
+  color: rgb(28, 109, 248);
+}
+
+#footer {
+  padding: 30px 70px 30px 50px;
+  margin-top: 100px;
+  width: 100vw;
+  height: 23vh;
+  background: rgba(0, 0, 0, 0.9);
+  font-weight: 100;
+  color: rgb(147, 141, 141);
+  overflow: hidden;
+}
+
+.footer-top {
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding: 20px 80px;
+}
+
+.footer-links {
+  font-size: 0.7rem;
+}
+
+.footer-link-item {
+  display: inline-block;
+  padding: 10px 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .brand-name {
+    font-size: 1rem;
+  }
+  #sign-in-page {
+    background: #000;
+  }
+  #sign-in-form {
+    width: 100vw;
+    padding: 19px 19px 0px;
+  }
+  ::placeholder {
+    font-size: 0.65rem;
+  }
+
+  .line1 {
+    font-size: 12px;
+  }
+  .line2 > p {
+    font-size: 0.64rem;
+  }
+  .line2 {
+    padding: 40px 0px 0px;
+  }
+
+  #footer {
+    border-top: 2px solid rgb(66, 65, 65);
+    padding: 30px;
+    font-size: 0.5rem;
+  }
+  .footer-top {
+    font-size: 0.68rem;
+    padding: 0px 0px 5px;
+  }
+  .footer-links {
+    text-align: justify;
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  .footer-link-item {
+    font-size: 0.58rem;
+    padding: 18px 5px 0px 0px;
+  }
+};
